@@ -17,11 +17,12 @@
     <h1>Digite um CEP e veja a situação da COVID-19 na região</h1>
     <div class="container">
       <input
-        type="number"
+        type="text"
         id="box"
-        placeholder="0000000"
-        class="search__box"
+        placeholder="00000-000"
         maxlength="9"
+        class="search__box"
+        pattern="[0-9]"
       />
       <i
         class="fas fa-search search__icon"
@@ -35,19 +36,19 @@
 
     <table class="covidResults">
       <tr>
-        <td>Estado pesquisado</td>
+        <td>Estado pesquisado:</td>
         <td class="table-info" id="locale"></td>
       </tr>
       <tr>
-        <td>Casos confirmados</td>
+        <td>Casos confirmados:</td>
         <td class="table-info" id="confirmedCases"></td>
       </tr>
       <tr>
-        <td>Casos suspeitos</td>
+        <td>Casos suspeitos:</td>
         <td class="table-info" id="suspectedCases"></td>
       </tr>
       <tr>
-        <td>Total de mortes</td>
+        <td>Total de mortes:</td>
         <td class="table-info" id="totalDeaths"></td>
       </tr>
     </table>
